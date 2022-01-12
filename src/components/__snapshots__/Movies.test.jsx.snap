@@ -13,7 +13,7 @@ Object {
             class="container"
           >
             <a
-              href="/movies/undefined"
+              href="/movies/1"
             >
               <p
                 class="title"
@@ -30,7 +30,7 @@ Object {
             class="container"
           >
             <a
-              href="/movies/undefined"
+              href="/movies/2"
             >
               <p
                 class="title"
@@ -56,7 +56,7 @@ Object {
           class="container"
         >
           <a
-            href="/movies/undefined"
+            href="/movies/1"
           >
             <p
               class="title"
@@ -73,7 +73,7 @@ Object {
           class="container"
         >
           <a
-            href="/movies/undefined"
+            href="/movies/2"
           >
             <p
               class="title"

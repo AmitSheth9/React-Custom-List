@@ -7,12 +7,11 @@ import { useHistory } from 'react-router-dom';
 
 export default function MovieDetail() {
     const [movie, setMovie] = useState({});
-    const [loading, setLoading] = useState(false);
+    const [loading, setLoading] = useState(true);
     const { id } = useParams();
     const history = useHistory();
     useEffect(() => {
         const onMount = async () => {
-            setLoading(true)
             const response = await getByID(id);
             console.log(response.body);
             setMovie(response.body);

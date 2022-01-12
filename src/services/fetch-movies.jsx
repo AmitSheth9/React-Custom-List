@@ -12,6 +12,6 @@ export async function getPopularMovies() {
 
 export async function getByID(id) {
     const response = await request
-    .get(`http://api.themoviedb.org/3/movie/${id}?api_key=${process.env.apikey}`);
+    .get(`https://api.themoviedb.org/3/movie/${id}?api_key=${process.env.apikey}`);
     return response;
 }
