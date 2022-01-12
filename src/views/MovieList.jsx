@@ -23,6 +23,7 @@ export default function MovieList() {
 }, [])
     return (
         <>
+        <p>Popular Movies</p>
             {loading ? <div>Loading</div> : <div><Movies movies={movies}/></div>}
        
        </>

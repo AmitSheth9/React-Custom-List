@@ -5,15 +5,14 @@ import MovieDetail from './views/MovieDetail'
 export default function App() {
   return (
     <>
-      <Router>
+     <Router>
         <Switch>
         <Route path = '/movies/:id'>
             <MovieDetail/>
         </Route>
         <Route path ='/'>
             <MovieList/>
-        </Route>
-          
+        </Route> 
         </Switch>
       </Router>
     </>

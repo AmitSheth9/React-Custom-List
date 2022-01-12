@@ -1,11 +1,11 @@
 import React from 'react'
 import { move } from 'superagent'
-
+import styles from './Detail.css'
 export default function Detail({movie}) {
     return (
-        <div>
-            <p>{movie.title}</p>
-            <img src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}/>
+        <div className={styles.containerD}>
+            <p className={styles.title}>{movie.title}</p>
+            <img className={styles.imageD}src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}/>
             <p>{movie.overview}</p>
             <p>Rating: {movie.vote_average}</p>
             <p>Budget: {movie.budget}</p>

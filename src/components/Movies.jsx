@@ -1,20 +1,22 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import styles from './Movies.css';
 
 export default function Movies({movies}) {
     return (
         <div>
-            <ul>
+            <div className={styles.movies} >
             {movies.map((movie) => {
-                return <li key={movie.id}>
+                return (
+                <div key={movie.id} className={styles.container}>
                 <Link to={`/movies/${movie.id}`}>  
-                    <p>{movie.title}</p>
+                    <p className={styles.title}>{movie.title}</p>
                     <img src={`https://image.tmdb.org/t/p/w500/${movie.backdrop_path}`} alt={movie.title}/> 
                 </Link>
-                </li>
+                </div>
+                )
             })}
-
-            </ul> 
+            </div> 
         </div>
     )
 }
